@@ -1,0 +1,26 @@
+#include<stdio.h>
+int  pattern(int n,int m);;
+ int main()
+  {
+     int n,m;
+     printf("enter row and column\n");
+     scanf("%d %d",&n,&m);
+     pattern(n,m);
+  }
+ int pattern(int n,int m)
+ {
+   for(int i=1;i<=n;i++)
+    {
+      for(int j=1;j<=m;j++)
+        {
+          if(i==1||i==n||j==1||j==m)
+            {
+               printf("* ");
+             }
+          else
+         printf("  ");
+        }
+     printf("\n");
+    }
+  return 0;
+ }
